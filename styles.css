@@ -1,53 +1,57 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  background: #f9f9f9;
+  text-align: center;
   padding: 30px;
-  display: flex;
-  justify-content: center;
 }
 
-.app {
-  text-align: center;
+h1 {
+  color: #333;
 }
 
 #grid-container {
   display: grid;
   grid-template-columns: repeat(3, 100px);
-  gap: 10px;
-  margin: 20px 0;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
 .grid-item {
+  width: 100px;
+  height: 100px;
   background-color: transparent;
-  border: 2px solid #333;
-  padding: 30px 0;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.controls {
+  border: 2px solid #444;
   display: flex;
-  flex-direction: column;
-  gap: 10px;
-  max-width: 220px;
-  margin: 0 auto;
-}
-
-input {
-  padding: 8px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-}
-
-button {
-  padding: 10px;
-  background-color: #0047ab;
-  color: white;
-  border: none;
-  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  transition: background-color 0.3s ease;
   cursor: pointer;
 }
 
+.controls {
+  margin-top: 20px;
+}
+
+input {
+  padding: 10px;
+  margin: 5px;
+  font-size: 16px;
+  width: 200px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #0055aa;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
 button:hover {
-  background-color: #003a8c;
+  background-color: #003f7d;
 }
